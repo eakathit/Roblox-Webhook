@@ -1,0 +1,22 @@
+{
+  "item:gold": {
+    "aliases": ["gold bar"],
+    "icon": "/items/gold.png"
+  },
+  "item:einz-token": {
+    "aliases": ["eirz token", "ainz token"],
+    "icon": "/items/eirz-token.png"
+  },
+  "item:sorcerer-king-token": {
+    "aliases": ["sorcerer king staff", "sorcerer king reward token"],
+    "icon": "/items/sorcerer-king-token.png"
+  },
+  "unit:einz": {
+    "aliases": ["eirz", "ainz", "ainz ooal gown"],
+    "icon": "/items/secret-unit.png"
+  },
+  "unit:einz-sorcerer-king": {
+    "aliases": ["eirz sorcerer king", "ainz sorcerer king"],
+    "icon": "/items/secret-unit.png"
+  }
+}

@@ -1,0 +1,1786 @@
+{
+  "source": "https://anime-crusaders-x.wiki",
+  "syncedAt": "2026-11-18T17:04:54.983Z",
+  "counts": {
+    "items": 69,
+    "units": 107,
+    "total": 176
+  },
+  "entries": [
+    {
+      "id": "item:air-stone",
+      "type": "item",
+      "name": "Air Stone",
+      "normalizedName": "air stone",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-3203995b82e3"
+    },
+    {
+      "id": "item:anniversary-bundle",
+      "type": "item",
+      "name": "Anniversary Bundle",
+      "normalizedName": "anniversary bundle",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-2f075246df8b"
+    },
+    {
+      "id": "item:anniversary-ticket",
+      "type": "item",
+      "name": "Anniversary Ticket",
+      "normalizedName": "anniversary ticket",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-d8518d355a1f"
+    },
+    {
+      "id": "item:assault-bundle",
+      "type": "item",
+      "name": "Assault Bundle",
+      "normalizedName": "assault bundle",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-a19da59ac01e"
+    },
+    {
+      "id": "item:bizarre-token",
+      "type": "item",
+      "name": "Bizarre Token",
+      "normalizedName": "bizarre token",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-0d556d31fc1d"
+    },
+    {
+      "id": "item:blank-token",
+      "type": "item",
+      "name": "Blank Token",
+      "normalizedName": "blank token",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-773e16414e84"
+    },
+    {
+      "id": "item:blossom-katana",
+      "type": "item",
+      "name": "Blossom Katana",
+      "normalizedName": "blossom katana",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-1217fbccbb2c"
+    },
+    {
+      "id": "item:burning-fist-bundle",
+      "type": "item",
+      "name": "Burning Fist Bundle",
+      "normalizedName": "burning fist bundle",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-c3d52082c40d"
+    },
+    {
+      "id": "item:chainsaw-toast",
+      "type": "item",
+      "name": "Chainsaw Toast",
+      "normalizedName": "chainsaw toast",
+      "aliases": [],
+      "rarity": "Common",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-da9f5d513382"
+    },
+    {
+      "id": "item:christmas-part-2-tokens",
+      "type": "item",
+      "name": "Christmas Part 2 tokens",
+      "normalizedName": "christmas part 2 tokens",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-4b40df4e7330"
+    },
+    {
+      "id": "item:condensed-soul",
+      "type": "item",
+      "name": "Condensed Soul",
+      "normalizedName": "condensed soul",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-e3a98470eeb8"
+    },
+    {
+      "id": "item:control-token",
+      "type": "item",
+      "name": "Control Token",
+      "normalizedName": "control token",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-156d1d90781e"
+    },
+    {
+      "id": "item:core-of-desire",
+      "type": "item",
+      "name": "Core of Desire",
+      "normalizedName": "core of desire",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-39cf896356ca"
+    },
+    {
+      "id": "item:curse-token",
+      "type": "item",
+      "name": "Curse Token",
+      "normalizedName": "curse token",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-c6c8f8e3bf22"
+    },
+    {
+      "id": "item:cursed-womb",
+      "type": "item",
+      "name": "Cursed Womb",
+      "normalizedName": "cursed womb",
+      "aliases": [],
+      "rarity": "Common",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-a4233f9fb597"
+    },
+    {
+      "id": "item:demon-sword",
+      "type": "item",
+      "name": "Demon Sword",
+      "normalizedName": "demon sword",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-57b0d3d18a0a"
+    },
+    {
+      "id": "item:divine-stone",
+      "type": "item",
+      "name": "Divine Stone",
+      "normalizedName": "divine stone",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-58452ced0653"
+    },
+    {
+      "id": "item:divinity-remnants",
+      "type": "item",
+      "name": "Divinity Remnants",
+      "normalizedName": "divinity remnants",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-0db05d248aa5"
+    },
+    {
+      "id": "item:dragon-slayer",
+      "type": "item",
+      "name": "Dragon Slayer",
+      "normalizedName": "dragon slayer",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-40ae6661f602"
+    },
+    {
+      "id": "item:dragon-token",
+      "type": "item",
+      "name": "Dragon Token",
+      "normalizedName": "dragon token",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-0216306447b0"
+    },
+    {
+      "id": "item:dreamwatch-eye",
+      "type": "item",
+      "name": "Dreamwatch Eye",
+      "normalizedName": "dreamwatch eye",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-c6ec3010aa2f"
+    },
+    {
+      "id": "item:earth-stone",
+      "type": "item",
+      "name": "Earth Stone",
+      "normalizedName": "earth stone",
+      "aliases": [],
+      "rarity": "Legendary",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-13b123a355b3"
+    },
+    {
+      "id": "item:egg-of-sacrifice",
+      "type": "item",
+      "name": "Egg of Sacrifice",
+      "normalizedName": "egg of sacrifice",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-5541f12e8ae3"
+    },
+    {
+      "id": "item:egg-of-the-falcon",
+      "type": "item",
+      "name": "Egg of the Falcon",
+      "normalizedName": "egg of the falcon",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-9df72dd980db"
+    },
+    {
+      "id": "item:einz-token",
+      "type": "item",
+      "name": "Einz Token",
+      "normalizedName": "einz token",
+      "aliases": [
+        "eirz token",
+        "ainz token"
+      ],
+      "rarity": null,
+      "icon": "/items/eirz-token.png",
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-ee67de1007e1"
+    },
+    {
+      "id": "item:elemental-stone-capsule",
+      "type": "item",
+      "name": "Elemental Stone Capsule",
+      "normalizedName": "elemental stone capsule",
+      "aliases": [],
+      "rarity": "Legendary",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-74388894cbbf"
+    },
+    {
+      "id": "item:emperor-sword",
+      "type": "item",
+      "name": "Emperor Sword",
+      "normalizedName": "emperor sword",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-e724b7c62616"
+    },
+    {
+      "id": "item:event-token",
+      "type": "item",
+      "name": "Event Token",
+      "normalizedName": "event token",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-0aa7840cb874"
+    },
+    {
+      "id": "item:fear-stone",
+      "type": "item",
+      "name": "Fear Stone",
+      "normalizedName": "fear stone",
+      "aliases": [],
+      "rarity": "Legendary",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-968eccf24309"
+    },
+    {
+      "id": "item:fighters-blade",
+      "type": "item",
+      "name": "Fighter's Blade",
+      "normalizedName": "fighters blade",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-c2a656589927"
+    },
+    {
+      "id": "item:fire-fist-hat",
+      "type": "item",
+      "name": "Fire Fist Hat",
+      "normalizedName": "fire fist hat",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-8f1897bf0f74"
+    },
+    {
+      "id": "item:fire-stone",
+      "type": "item",
+      "name": "Fire Stone",
+      "normalizedName": "fire stone",
+      "aliases": [],
+      "rarity": "Legendary",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-176105e6ee5a"
+    },
+    {
+      "id": "item:flame-sword",
+      "type": "item",
+      "name": "Flame Sword",
+      "normalizedName": "flame sword",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-ebbc9352f964"
+    },
+    {
+      "id": "item:friends-heart",
+      "type": "item",
+      "name": "Friend's Heart",
+      "normalizedName": "friends heart",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-cc9a9fb9edf6"
+    },
+    {
+      "id": "item:gems",
+      "type": "item",
+      "name": "Gems",
+      "normalizedName": "gems",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-e8b3fe0d8055"
+    },
+    {
+      "id": "item:gold",
+      "type": "item",
+      "name": "Gold",
+      "normalizedName": "gold",
+      "aliases": [
+        "gold bar"
+      ],
+      "rarity": null,
+      "icon": "/items/gold.png",
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-565092bc150c"
+    },
+    {
+      "id": "item:grail-token",
+      "type": "item",
+      "name": "Grail Token",
+      "normalizedName": "grail token",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-5ae87d0338de"
+    },
+    {
+      "id": "item:green-baby",
+      "type": "item",
+      "name": "Green Baby",
+      "normalizedName": "green baby",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-4b7f3b12ba88"
+    },
+    {
+      "id": "item:heavens-necklace",
+      "type": "item",
+      "name": "Heaven's Necklace",
+      "normalizedName": "heavens necklace",
+      "aliases": [],
+      "rarity": "Crusader",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-486482592c21"
+    },
+    {
+      "id": "item:hitman-token",
+      "type": "item",
+      "name": "Hitman Token",
+      "normalizedName": "hitman token",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-e280e4de0da3"
+    },
+    {
+      "id": "item:holiday-token",
+      "type": "item",
+      "name": "Holiday Token",
+      "normalizedName": "holiday token",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-a83dd01f3571"
+    },
+    {
+      "id": "item:jackal-n-casull",
+      "type": "item",
+      "name": "Jackal N' Casull",
+      "normalizedName": "jackal n casull",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-dd0daa947697"
+    },
+    {
+      "id": "item:jackpot-token",
+      "type": "item",
+      "name": "Jackpot Token",
+      "normalizedName": "jackpot token",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-ccfb0b1daf8a"
+    },
+    {
+      "id": "item:lightning-ears",
+      "type": "item",
+      "name": "Lightning Ears",
+      "normalizedName": "lightning ears",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-ee02a5579e20"
+    },
+    {
+      "id": "item:luck-potion",
+      "type": "item",
+      "name": "Luck Potion",
+      "normalizedName": "luck potion",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-87eae9b979e1"
+    },
+    {
+      "id": "item:marked-sting",
+      "type": "item",
+      "name": "Marked Sting",
+      "normalizedName": "marked sting",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-508b6bdd12fd"
+    },
+    {
+      "id": "item:perfect-stat-cube",
+      "type": "item",
+      "name": "Perfect Stat Cube",
+      "normalizedName": "perfect stat cube",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-1d2c705d6f9d"
+    },
+    {
+      "id": "item:relic-cube",
+      "type": "item",
+      "name": "Relic Cube",
+      "normalizedName": "relic cube",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-7a18273c2fc6"
+    },
+    {
+      "id": "item:royal-chest",
+      "type": "item",
+      "name": "Royal Chest",
+      "normalizedName": "royal chest",
+      "aliases": [],
+      "rarity": "Legendary",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-4ff000ad912d"
+    },
+    {
+      "id": "item:sacred-carrier",
+      "type": "item",
+      "name": "Sacred Carrier",
+      "normalizedName": "sacred carrier",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-f13f81af9bbc"
+    },
+    {
+      "id": "item:saiyans-necklace",
+      "type": "item",
+      "name": "Saiyan's Necklace",
+      "normalizedName": "saiyans necklace",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-d01efaffc235"
+    },
+    {
+      "id": "item:sorcerer-king-token",
+      "type": "item",
+      "name": "Sorcerer King Token",
+      "normalizedName": "sorcerer king token",
+      "aliases": [
+        "sorcerer king staff",
+        "sorcerer king reward token"
+      ],
+      "rarity": null,
+      "icon": "/items/sorcerer-king-token.png",
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-36fc330e6f2c"
+    },
+    {
+      "id": "item:sorcerer-token",
+      "type": "item",
+      "name": "Sorcerer Token",
+      "normalizedName": "sorcerer token",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-dd612d248fbe"
+    },
+    {
+      "id": "item:stat-cube",
+      "type": "item",
+      "name": "Stat Cube",
+      "normalizedName": "stat cube",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-d9bad07be0d3"
+    },
+    {
+      "id": "item:stat-token",
+      "type": "item",
+      "name": "Stat Token",
+      "normalizedName": "stat token",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-14f968dbfc9c"
+    },
+    {
+      "id": "item:steel-helmet",
+      "type": "item",
+      "name": "Steel Helmet",
+      "normalizedName": "steel helmet",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-4da640ba80a3"
+    },
+    {
+      "id": "item:sword-of-the-king",
+      "type": "item",
+      "name": "Sword of the King",
+      "normalizedName": "sword of the king",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-da1e3b63645d"
+    },
+    {
+      "id": "item:sword-of-the-shadows",
+      "type": "item",
+      "name": "Sword of the Shadows",
+      "normalizedName": "sword of the shadows",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-f1fe54925063"
+    },
+    {
+      "id": "item:the-one-bundle",
+      "type": "item",
+      "name": "The One Bundle",
+      "normalizedName": "the one bundle",
+      "aliases": [],
+      "rarity": "Crusader",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-8cd4a5784ff0"
+    },
+    {
+      "id": "item:token-of-chains",
+      "type": "item",
+      "name": "Token of Chains",
+      "normalizedName": "token of chains",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-b5cd6582ea9d"
+    },
+    {
+      "id": "item:token-of-resonance",
+      "type": "item",
+      "name": "Token of Resonance",
+      "normalizedName": "token of resonance",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-10e60fecc64f"
+    },
+    {
+      "id": "item:trait-remnant",
+      "type": "item",
+      "name": "Trait Remnant",
+      "normalizedName": "trait remnant",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-1fdf57666501"
+    },
+    {
+      "id": "item:trait-token",
+      "type": "item",
+      "name": "Trait Token",
+      "normalizedName": "trait token",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-b1cf12efe247"
+    },
+    {
+      "id": "item:travel-bento",
+      "type": "item",
+      "name": "Travel Bento",
+      "normalizedName": "travel bento",
+      "aliases": [],
+      "rarity": "Common",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-d085f771c111"
+    },
+    {
+      "id": "item:undead-token",
+      "type": "item",
+      "name": "Undead Token",
+      "normalizedName": "undead token",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-ab18a40d85c0"
+    },
+    {
+      "id": "item:water-stone",
+      "type": "item",
+      "name": "Water Stone",
+      "normalizedName": "water stone",
+      "aliases": [],
+      "rarity": "Legendary",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-31d714b69958"
+    },
+    {
+      "id": "item:wings-of-perfection",
+      "type": "item",
+      "name": "Wings of Perfection",
+      "normalizedName": "wings of perfection",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-3a73df474a14"
+    },
+    {
+      "id": "item:wolf-token",
+      "type": "item",
+      "name": "Wolf Token",
+      "normalizedName": "wolf token",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-ae50efc0bf2b"
+    },
+    {
+      "id": "item:wrath-token",
+      "type": "item",
+      "name": "Wrath Token",
+      "normalizedName": "wrath token",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/items/#object-873bb1c2d513"
+    },
+    {
+      "id": "unit:ai",
+      "type": "unit",
+      "name": "AI",
+      "normalizedName": "ai",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-32e83e92d45d"
+    },
+    {
+      "id": "unit:ai-idol",
+      "type": "unit",
+      "name": "AI (Idol)",
+      "normalizedName": "ai idol",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-fae1ecb209a7"
+    },
+    {
+      "id": "unit:akuzo",
+      "type": "unit",
+      "name": "Akuzo",
+      "normalizedName": "akuzo",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-b026b42e419e"
+    },
+    {
+      "id": "unit:akuzo-vs-renkuro",
+      "type": "unit",
+      "name": "Akuzo VS Renkuro",
+      "normalizedName": "akuzo vs renkuro",
+      "aliases": [],
+      "rarity": "Crusader",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-7093148a860d"
+    },
+    {
+      "id": "unit:alfonz",
+      "type": "unit",
+      "name": "Alfonz",
+      "normalizedName": "alfonz",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-c6c3408ba172"
+    },
+    {
+      "id": "unit:ant-king-shadow-fang",
+      "type": "unit",
+      "name": "Ant King (Shadow Fang)",
+      "normalizedName": "ant king shadow fang",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-cab4b2fd1704"
+    },
+    {
+      "id": "unit:asuna",
+      "type": "unit",
+      "name": "Asuna",
+      "normalizedName": "asuna",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-aad406ef086a"
+    },
+    {
+      "id": "unit:asuno-flashblade",
+      "type": "unit",
+      "name": "Asuno (Flashblade)",
+      "normalizedName": "asuno flashblade",
+      "aliases": [],
+      "rarity": "Exclusive",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-e36b3bfc734c"
+    },
+    {
+      "id": "unit:ayzen",
+      "type": "unit",
+      "name": "Ayzen",
+      "normalizedName": "ayzen",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-08fde474438a"
+    },
+    {
+      "id": "unit:ayzen-perfect",
+      "type": "unit",
+      "name": "Ayzen (Perfect)",
+      "normalizedName": "ayzen perfect",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-8c0b57e08ba0"
+    },
+    {
+      "id": "unit:berserk",
+      "type": "unit",
+      "name": "Berserk",
+      "normalizedName": "berserk",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-30282be22ebd"
+    },
+    {
+      "id": "unit:berserk-beast-of-rage",
+      "type": "unit",
+      "name": "Berserk (BEAST OF RAGE)",
+      "normalizedName": "berserk beast of rage",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-ce3632568e47"
+    },
+    {
+      "id": "unit:berserk-slayer",
+      "type": "unit",
+      "name": "Berserk (Slayer)",
+      "normalizedName": "berserk slayer",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-ba3ca7c18cbf"
+    },
+    {
+      "id": "unit:beyond-heaven",
+      "type": "unit",
+      "name": "Beyond Heaven",
+      "normalizedName": "beyond heaven",
+      "aliases": [],
+      "rarity": "Crusader",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-a7a732423601"
+    },
+    {
+      "id": "unit:boo",
+      "type": "unit",
+      "name": "Boo",
+      "normalizedName": "boo",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-b28c6958381f"
+    },
+    {
+      "id": "unit:brulo-rage",
+      "type": "unit",
+      "name": "Brulo (Rage)",
+      "normalizedName": "brulo rage",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-cf7c417a7c60"
+    },
+    {
+      "id": "unit:bun",
+      "type": "unit",
+      "name": "Bun",
+      "normalizedName": "bun",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-08d1082cc8d8"
+    },
+    {
+      "id": "unit:bun-immortal",
+      "type": "unit",
+      "name": "Bun (Immortal)",
+      "normalizedName": "bun immortal",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-7eca20033b75"
+    },
+    {
+      "id": "unit:byaku",
+      "type": "unit",
+      "name": "Byaku",
+      "normalizedName": "byaku",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-cbaa06ab4846"
+    },
+    {
+      "id": "unit:call-ultra-perfect",
+      "type": "unit",
+      "name": "Call (ULTRA PERFECT)",
+      "normalizedName": "call ultra perfect",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-7edb360f06ac"
+    },
+    {
+      "id": "unit:chrollo-phantom",
+      "type": "unit",
+      "name": "Chrollo (Phantom)",
+      "normalizedName": "chrollo phantom",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-d4fe112827ee"
+    },
+    {
+      "id": "unit:coyote-number-one",
+      "type": "unit",
+      "name": "Coyote (Number One)",
+      "normalizedName": "coyote number one",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-bd1c4ed8dffd"
+    },
+    {
+      "id": "unit:denshi",
+      "type": "unit",
+      "name": "Denshi",
+      "normalizedName": "denshi",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-1d9e6eebea93"
+    },
+    {
+      "id": "unit:dio",
+      "type": "unit",
+      "name": "Dio",
+      "normalizedName": "dio",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-d0c97a588484"
+    },
+    {
+      "id": "unit:dracula-vampire-king",
+      "type": "unit",
+      "name": "Dracula (Vampire King)",
+      "normalizedName": "dracula vampire king",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-a0126546bff6"
+    },
+    {
+      "id": "unit:einz",
+      "type": "unit",
+      "name": "Einz",
+      "normalizedName": "einz",
+      "aliases": [
+        "eirz",
+        "ainz",
+        "ainz ooal gown"
+      ],
+      "rarity": "Crusader",
+      "icon": "/items/secret-unit.png",
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-634171e0b505"
+    },
+    {
+      "id": "unit:einz-sorcerer-king",
+      "type": "unit",
+      "name": "Einz (Sorcerer King)",
+      "normalizedName": "einz sorcerer king",
+      "aliases": [
+        "eirz sorcerer king",
+        "ainz sorcerer king"
+      ],
+      "rarity": "Crusader",
+      "icon": "/items/secret-unit.png",
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-df3fb50b74ba"
+    },
+    {
+      "id": "unit:esdead-ice-empress",
+      "type": "unit",
+      "name": "Esdead (Ice Empress)",
+      "normalizedName": "esdead ice empress",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-beed98f34338"
+    },
+    {
+      "id": "unit:esdeath",
+      "type": "unit",
+      "name": "Esdeath",
+      "normalizedName": "esdeath",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-9db4747befbf"
+    },
+    {
+      "id": "unit:falcon",
+      "type": "unit",
+      "name": "Falcon",
+      "normalizedName": "falcon",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-a84571394b5e"
+    },
+    {
+      "id": "unit:falcon-sacrifice",
+      "type": "unit",
+      "name": "Falcon (Sacrifice)",
+      "normalizedName": "falcon sacrifice",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-3d20d8dbb192"
+    },
+    {
+      "id": "unit:falcon-wings-of-darkness",
+      "type": "unit",
+      "name": "Falcon (Wings of Darkness)",
+      "normalizedName": "falcon wings of darkness",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-0366aced347f"
+    },
+    {
+      "id": "unit:falcon-wings-of-light",
+      "type": "unit",
+      "name": "Falcon (Wings of Light)",
+      "normalizedName": "falcon wings of light",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-65e765786f11"
+    },
+    {
+      "id": "unit:fighter",
+      "type": "unit",
+      "name": "Fighter",
+      "normalizedName": "fighter",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-f50feb66b167"
+    },
+    {
+      "id": "unit:flame",
+      "type": "unit",
+      "name": "Flame",
+      "normalizedName": "flame",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-bd9dc5f78dac"
+    },
+    {
+      "id": "unit:flame-burning-fist",
+      "type": "unit",
+      "name": "Flame (Burning Fist)",
+      "normalizedName": "flame burning fist",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-61ca6dcf142b"
+    },
+    {
+      "id": "unit:freeran",
+      "type": "unit",
+      "name": "Freeran",
+      "normalizedName": "freeran",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-a40ceb0c658c"
+    },
+    {
+      "id": "unit:frieren",
+      "type": "unit",
+      "name": "Frieren",
+      "normalizedName": "frieren",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-2c3b58f4f713"
+    },
+    {
+      "id": "unit:gilgamesh-the-golden-king",
+      "type": "unit",
+      "name": "Gilgamesh (The Golden King)",
+      "normalizedName": "gilgamesh the golden king",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-e7c107c1fa05"
+    },
+    {
+      "id": "unit:goju",
+      "type": "unit",
+      "name": "Goju",
+      "normalizedName": "goju",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-826f18f9058f"
+    },
+    {
+      "id": "unit:goju-limitless",
+      "type": "unit",
+      "name": "Goju (Limitless)",
+      "normalizedName": "goju limitless",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-791767ad755c"
+    },
+    {
+      "id": "unit:goju-vs-sukuno",
+      "type": "unit",
+      "name": "Goju VS Sukuno",
+      "normalizedName": "goju vs sukuno",
+      "aliases": [],
+      "rarity": "Crusader",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-94b3831e53f9"
+    },
+    {
+      "id": "unit:goko-ultimate",
+      "type": "unit",
+      "name": "Goko (Ultimate)",
+      "normalizedName": "goko ultimate",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-9c0eccaf0ed4"
+    },
+    {
+      "id": "unit:gone",
+      "type": "unit",
+      "name": "Gone",
+      "normalizedName": "gone",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-283bb9deef02"
+    },
+    {
+      "id": "unit:heavenly-author",
+      "type": "unit",
+      "name": "Heavenly Author",
+      "normalizedName": "heavenly author",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-b16cf2678b77"
+    },
+    {
+      "id": "unit:hie",
+      "type": "unit",
+      "name": "Hie",
+      "normalizedName": "hie",
+      "aliases": [],
+      "rarity": "Exclusive",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-433009d61afa"
+    },
+    {
+      "id": "unit:ichi-masked",
+      "type": "unit",
+      "name": "Ichi Masked",
+      "normalizedName": "ichi masked",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-77479ff54316"
+    },
+    {
+      "id": "unit:ishtall",
+      "type": "unit",
+      "name": "Ishtall",
+      "normalizedName": "ishtall",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-c67d195994dc"
+    },
+    {
+      "id": "unit:jolin",
+      "type": "unit",
+      "name": "Jolin",
+      "normalizedName": "jolin",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-9a82e7b3860e"
+    },
+    {
+      "id": "unit:jolin-stone-fate",
+      "type": "unit",
+      "name": "Jolin (Stone Fate)",
+      "normalizedName": "jolin stone fate",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-46f6742e92bd"
+    },
+    {
+      "id": "unit:jootaru",
+      "type": "unit",
+      "name": "Jootaru",
+      "normalizedName": "jootaru",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-041edd8ca050"
+    },
+    {
+      "id": "unit:jootaru-the-world",
+      "type": "unit",
+      "name": "Jootaru (The World)",
+      "normalizedName": "jootaru the world",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-e8cd04870139"
+    },
+    {
+      "id": "unit:kaido-x-luffy",
+      "type": "unit",
+      "name": "Kaido x Luffy",
+      "normalizedName": "kaido x luffy",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-3e40fa1a5c7e"
+    },
+    {
+      "id": "unit:kanpechi",
+      "type": "unit",
+      "name": "Kanpechi",
+      "normalizedName": "kanpechi",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-d3fe12488844"
+    },
+    {
+      "id": "unit:kanpechi-born-for-battle",
+      "type": "unit",
+      "name": "Kanpechi (Born for Battle)",
+      "normalizedName": "kanpechi born for battle",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-cf6d610cd9ab"
+    },
+    {
+      "id": "unit:king",
+      "type": "unit",
+      "name": "King",
+      "normalizedName": "king",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-4e6860d65a51"
+    },
+    {
+      "id": "unit:kisoka",
+      "type": "unit",
+      "name": "Kisoka",
+      "normalizedName": "kisoka",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-85560d45960f"
+    },
+    {
+      "id": "unit:kisoka-strategist",
+      "type": "unit",
+      "name": "Kisoka (Strategist)",
+      "normalizedName": "kisoka strategist",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-414947bce1c6"
+    },
+    {
+      "id": "unit:kurimi",
+      "type": "unit",
+      "name": "Kurimi",
+      "normalizedName": "kurimi",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-aa633d0a80d2"
+    },
+    {
+      "id": "unit:kurimi-time-queen",
+      "type": "unit",
+      "name": "Kurimi (Time Queen)",
+      "normalizedName": "kurimi time queen",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-54f98e20620f"
+    },
+    {
+      "id": "unit:kyruto-dual-wielder",
+      "type": "unit",
+      "name": "Kyruto (Dual Wielder)",
+      "normalizedName": "kyruto dual wielder",
+      "aliases": [],
+      "rarity": "Exclusive",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-6ad7587e258d"
+    },
+    {
+      "id": "unit:lao-heart",
+      "type": "unit",
+      "name": "Lao (Heart)",
+      "normalizedName": "lao heart",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-bc6d86e20f2b"
+    },
+    {
+      "id": "unit:lloryo-doctor",
+      "type": "unit",
+      "name": "Lloryo (Doctor)",
+      "normalizedName": "lloryo doctor",
+      "aliases": [],
+      "rarity": "Legendary",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-88321f9d3c26"
+    },
+    {
+      "id": "unit:loid",
+      "type": "unit",
+      "name": "Loid",
+      "normalizedName": "loid",
+      "aliases": [],
+      "rarity": "Legendary",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-91dfbbff45b9"
+    },
+    {
+      "id": "unit:maki",
+      "type": "unit",
+      "name": "Maki",
+      "normalizedName": "maki",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-643f8c870210"
+    },
+    {
+      "id": "unit:maki-authority",
+      "type": "unit",
+      "name": "Maki (Authority)",
+      "normalizedName": "maki authority",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-aa82435b703b"
+    },
+    {
+      "id": "unit:mastermind",
+      "type": "unit",
+      "name": "Mastermind",
+      "normalizedName": "mastermind",
+      "aliases": [],
+      "rarity": "Legendary",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-51e4e6500334"
+    },
+    {
+      "id": "unit:mely",
+      "type": "unit",
+      "name": "Mely",
+      "normalizedName": "mely",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-08e41ae98e80"
+    },
+    {
+      "id": "unit:mely-assault",
+      "type": "unit",
+      "name": "Mely (Assault)",
+      "normalizedName": "mely assault",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-ddb2592f34e3"
+    },
+    {
+      "id": "unit:monkey-god",
+      "type": "unit",
+      "name": "Monkey God",
+      "normalizedName": "monkey god",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-6636ead76a2f"
+    },
+    {
+      "id": "unit:mr-champion",
+      "type": "unit",
+      "name": "Mr. Champion",
+      "normalizedName": "mr champion",
+      "aliases": [],
+      "rarity": "Legendary",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-805decc1457d"
+    },
+    {
+      "id": "unit:phoenix",
+      "type": "unit",
+      "name": "Phoenix",
+      "normalizedName": "phoenix",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-03a8f0dd8edb"
+    },
+    {
+      "id": "unit:phoenix-rebirth",
+      "type": "unit",
+      "name": "Phoenix (Rebirth)",
+      "normalizedName": "phoenix rebirth",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-f1a672857643"
+    },
+    {
+      "id": "unit:puci",
+      "type": "unit",
+      "name": "Puci",
+      "normalizedName": "puci",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-fbddc56377cf"
+    },
+    {
+      "id": "unit:puci-made-in-heaven",
+      "type": "unit",
+      "name": "Puci (Made in Heaven)",
+      "normalizedName": "puci made in heaven",
+      "aliases": [],
+      "rarity": "Crusader",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-a90792be0c84"
+    },
+    {
+      "id": "unit:puci-moon",
+      "type": "unit",
+      "name": "Puci (MOON)",
+      "normalizedName": "puci moon",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-a208f5ef53b6"
+    },
+    {
+      "id": "unit:rain",
+      "type": "unit",
+      "name": "Rain",
+      "normalizedName": "rain",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-e8901df747f1"
+    },
+    {
+      "id": "unit:ranje",
+      "type": "unit",
+      "name": "Ranje",
+      "normalizedName": "ranje",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-0f10250035c4"
+    },
+    {
+      "id": "unit:ranje-reckless-fighter",
+      "type": "unit",
+      "name": "Ranje (Reckless Fighter)",
+      "normalizedName": "ranje reckless fighter",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-24b978f35fe4"
+    },
+    {
+      "id": "unit:rio",
+      "type": "unit",
+      "name": "Rio",
+      "normalizedName": "rio",
+      "aliases": [],
+      "rarity": "Exclusive",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-c70cc6f6b4d9"
+    },
+    {
+      "id": "unit:rookie",
+      "type": "unit",
+      "name": "Rookie",
+      "normalizedName": "rookie",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-defbd9cc3269"
+    },
+    {
+      "id": "unit:shadow",
+      "type": "unit",
+      "name": "Shadow",
+      "normalizedName": "shadow",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-0bb09d80600e"
+    },
+    {
+      "id": "unit:shadow-atomic",
+      "type": "unit",
+      "name": "Shadow (Atomic)",
+      "normalizedName": "shadow atomic",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-97b3c838cb3d"
+    },
+    {
+      "id": "unit:shaoten",
+      "type": "unit",
+      "name": "Shaoten",
+      "normalizedName": "shaoten",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-6ee55a291c0f"
+    },
+    {
+      "id": "unit:slime",
+      "type": "unit",
+      "name": "Slime",
+      "normalizedName": "slime",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-cb03080d3832"
+    },
+    {
+      "id": "unit:speedcart",
+      "type": "unit",
+      "name": "Speedcart",
+      "normalizedName": "speedcart",
+      "aliases": [],
+      "rarity": "Epic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-594b34a51c7a"
+    },
+    {
+      "id": "unit:starrk",
+      "type": "unit",
+      "name": "Starrk",
+      "normalizedName": "starrk",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-4c6d6b4d2985"
+    },
+    {
+      "id": "unit:sun-god",
+      "type": "unit",
+      "name": "Sun God",
+      "normalizedName": "sun god",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-1b43b0b0f3b0"
+    },
+    {
+      "id": "unit:sun-god-vs-dragon",
+      "type": "unit",
+      "name": "Sun God VS Dragon",
+      "normalizedName": "sun god vs dragon",
+      "aliases": [],
+      "rarity": "Crusader",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-9c585316324d"
+    },
+    {
+      "id": "unit:sun-woo-system",
+      "type": "unit",
+      "name": "Sun Woo (System)",
+      "normalizedName": "sun woo system",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-3e6d87af90e2"
+    },
+    {
+      "id": "unit:sweet-witch",
+      "type": "unit",
+      "name": "Sweet Witch",
+      "normalizedName": "sweet witch",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-61e39b560bd2"
+    },
+    {
+      "id": "unit:toju",
+      "type": "unit",
+      "name": "Toju",
+      "normalizedName": "toju",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-f51c9419001d"
+    },
+    {
+      "id": "unit:trunks-future-blade",
+      "type": "unit",
+      "name": "Trunks (Future Blade)",
+      "normalizedName": "trunks future blade",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-6d22032951f4"
+    },
+    {
+      "id": "unit:twenty-one",
+      "type": "unit",
+      "name": "Twenty One",
+      "normalizedName": "twenty one",
+      "aliases": [],
+      "rarity": "Exclusive",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-ae29a80da295"
+    },
+    {
+      "id": "unit:ukia",
+      "type": "unit",
+      "name": "Ukia",
+      "normalizedName": "ukia",
+      "aliases": [],
+      "rarity": "Legendary",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-acb47f0b34de"
+    },
+    {
+      "id": "unit:undead-knight-king",
+      "type": "unit",
+      "name": "Undead Knight (King)",
+      "normalizedName": "undead knight king",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-516944f38481"
+    },
+    {
+      "id": "unit:useless-goddess",
+      "type": "unit",
+      "name": "Useless Goddess",
+      "normalizedName": "useless goddess",
+      "aliases": [],
+      "rarity": "Legendary",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-7cecc2887432"
+    },
+    {
+      "id": "unit:vegetable-ape",
+      "type": "unit",
+      "name": "Vegetable Ape",
+      "normalizedName": "vegetable ape",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-822d1bb625b8"
+    },
+    {
+      "id": "unit:vejita-majin",
+      "type": "unit",
+      "name": "Vejita (Majin)",
+      "normalizedName": "vejita majin",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-9d7c2c8a3f4f"
+    },
+    {
+      "id": "unit:vejita-ultimate-majin",
+      "type": "unit",
+      "name": "Vejita (Ultimate Majin)",
+      "normalizedName": "vejita ultimate majin",
+      "aliases": [],
+      "rarity": null,
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-c0dfd9b8daf7"
+    },
+    {
+      "id": "unit:virgile",
+      "type": "unit",
+      "name": "Virgile",
+      "normalizedName": "virgile",
+      "aliases": [],
+      "rarity": "Exclusive",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-9c8363fd8aac"
+    },
+    {
+      "id": "unit:x",
+      "type": "unit",
+      "name": "X",
+      "normalizedName": "x",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-b72ac0d8c820"
+    },
+    {
+      "id": "unit:yamamoto",
+      "type": "unit",
+      "name": "Yamamoto",
+      "normalizedName": "yamamoto",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-7a7e8b339465"
+    },
+    {
+      "id": "unit:yoota",
+      "type": "unit",
+      "name": "Yoota",
+      "normalizedName": "yoota",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-0158e6dc3b7f"
+    },
+    {
+      "id": "unit:yoota-true-love",
+      "type": "unit",
+      "name": "Yoota (True Love)",
+      "normalizedName": "yoota true love",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-24c5b7630888"
+    },
+    {
+      "id": "unit:zen",
+      "type": "unit",
+      "name": "Zen",
+      "normalizedName": "zen",
+      "aliases": [],
+      "rarity": "Mythic",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-ef30e96eb968"
+    },
+    {
+      "id": "unit:zero-true-emperor",
+      "type": "unit",
+      "name": "Zero (True Emperor)",
+      "normalizedName": "zero true emperor",
+      "aliases": [],
+      "rarity": "Secret",
+      "icon": null,
+      "wikiUrl": "https://anime-crusaders-x.wiki/units/#object-6c2499a6b5da"
+    }
+  ]
+}

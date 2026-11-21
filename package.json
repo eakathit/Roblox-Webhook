@@ -6,9 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "bot": "node scripts/discord-bot.mjs",
+    "bridge": "node scripts/discord-bridge.mjs",
+    "sync:catalog": "node scripts/sync-acx-catalog.mjs",
     "lint": "eslint"
   },
   "dependencies": {
+    "discord.js": "^14.28.1",
+    "dotenv": "^18.0.10",
+    "lucide-react": "^1.75.0",
     "next": "16.4.6",
     "react": "19.3.0",
     "react-dom": "19.3.0"
