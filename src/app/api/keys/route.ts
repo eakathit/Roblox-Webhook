@@ -3,6 +3,21 @@ import { createWebhookKey } from '@/lib/webhook-keys';
 
 const NO_STORE_HEADERS = { 'Cache-Control': 'no-store, max-age=0' };
 
+function publicOrigin(request: NextRequest) {
+  const railwayDomain = process.env.RAILWAY_PUBLIC_DOMAIN?.trim();
+  if (railwayDomain) {
+    return `https://${railwayDomain.replace(/^https?:\/\//, '').replace(/\/$/, '')}`;
+  }
+
+  const forwardedHost = request.headers.get('x-forwarded-host')?.split(',')[0]?.trim();
+  if (forwardedHost) {
+    const forwardedProtocol = request.headers.get('x-forwarded-proto')?.split(',')[0]?.trim() || 'https';
+    return `${forwardedProtocol}://${forwardedHost}`;
+  }
+
+  return request.nextUrl.origin;
+}
+
 export async function POST(request: NextRequest) {
   const contentLength = Number(request.headers.get('content-length') || '0');
   if (contentLength > 4096) {
@@ -22,7 +37,7 @@ export async function POST(request: NextRequest) {
   }
 
   const { record, writeKey } = createWebhookKey(displayName);
-  const origin = request.nextUrl.origin;
+  const origin = publicOrigin(request);
 
   return NextResponse.json(
     {
