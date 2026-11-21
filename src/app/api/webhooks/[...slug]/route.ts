@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getEventsByToken, parseDiscordPayload, saveEvent, clearEventsByToken } from '@/lib/store';
+import { handleDirectWebhook } from '@/lib/direct-webhook-route';
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -46,6 +47,9 @@ export async function POST(
   context: { params: Promise<{ slug: string[] }> }
 ) {
   const { slug } = await context.params;
+  if (slug?.length === 2 && /^\d{17,20}$/.test(slug[0])) {
+    return handleDirectWebhook(request, slug[1]);
+  }
   const token = extractToken(slug);
 
   let payload: unknown = null;

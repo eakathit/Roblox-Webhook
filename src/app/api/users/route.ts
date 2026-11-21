@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { connection, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 import { listWebhookProfiles } from '@/lib/webhook-keys';
@@ -32,6 +32,7 @@ function containsFarmData(events: StoredEvent[]) {
 }
 
 export async function GET() {
+  await connection();
   let data: Record<string, StoredEvent[]> = {};
 
   try {

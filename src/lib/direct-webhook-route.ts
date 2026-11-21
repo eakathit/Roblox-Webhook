@@ -41,12 +41,5 @@ export async function handleDirectWebhook(request: NextRequest, key: string) {
   const event = parseDiscordPayload(keyRecord.publicId, payload);
   saveEvent(keyRecord.publicId, event);
 
-  return NextResponse.json(
-    {
-      success: true,
-      eventId: event.id,
-      dashboardPath: `/?user=${encodeURIComponent(keyRecord.publicId)}`,
-    },
-    { status: 201, headers: directWebhookCorsHeaders },
-  );
+  return new NextResponse(null, { status: 204, headers: directWebhookCorsHeaders });
 }

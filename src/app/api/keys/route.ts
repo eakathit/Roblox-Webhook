@@ -43,7 +43,7 @@ export async function POST(request: NextRequest) {
     {
       success: true,
       publicId: record.publicId,
-      endpointUrl: `${origin}/api/webhooks/direct/${writeKey}`,
+      endpointUrl: `${origin}/api/webhooks/1350000000000000000/${writeKey}`,
       dashboardUrl: `${origin}/?user=${encodeURIComponent(record.publicId)}`,
     },
     { status: 201, headers: NO_STORE_HEADERS },

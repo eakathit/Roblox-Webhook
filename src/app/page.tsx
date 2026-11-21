@@ -306,8 +306,10 @@ export default function Home() {
           drops: [{ name: 'Sorcerer King Token', quantity: 1, rarity: 'secret' }],
         }),
       });
-      const data = await response.json();
-      if (!response.ok) throw new Error(data?.error || 'ส่งข้อมูลทดสอบไม่สำเร็จ');
+      if (!response.ok) {
+        const data = await response.json().catch(() => null);
+        throw new Error(data?.error || 'ส่งข้อมูลทดสอบไม่สำเร็จ');
+      }
       setDirectTested(true);
     } catch (error) {
       setDirectSetupError(error instanceof Error ? error.message : 'ส่งข้อมูลทดสอบไม่สำเร็จ');
