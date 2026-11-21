@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { listWebhookProfiles } from '@/lib/webhook-keys';
 
 const DATA_FILE = path.join(process.cwd(), 'data', 'events.json');
 const NO_STORE_HEADERS = { 'Cache-Control': 'no-store, max-age=0' };
@@ -31,41 +32,51 @@ function containsFarmData(events: StoredEvent[]) {
 }
 
 export async function GET() {
+  let data: Record<string, StoredEvent[]> = {};
+
   try {
     if (fs.existsSync(DATA_FILE)) {
       const content = fs.readFileSync(DATA_FILE, 'utf-8');
-      const data = JSON.parse(content || '{}') as Record<string, StoredEvent[]>;
-      const users = Object.entries(data)
-        .filter(([user, events]) =>
-          !user.startsWith('user_') && Array.isArray(events) && containsFarmData(events),
-        )
-        .map(([user, events]) => {
-          const profile = events.find((event) => event.profile)?.profile;
-          return {
-            name: user,
-            displayName: profile?.displayName || user,
-            avatarUrl: profile?.avatarUrl || null,
-          };
-        });
-
-      return NextResponse.json(
-        {
-          success: true,
-          users,
-          latestUser: users[0]?.name || null,
-        },
-        { headers: NO_STORE_HEADERS },
-      );
+      data = JSON.parse(content || '{}') as Record<string, StoredEvent[]>;
     }
   } catch (err) {
     console.error('Failed to get users:', err);
   }
 
+  const usersById = new Map<string, {
+    name: string;
+    displayName: string;
+    avatarUrl: string | null;
+    hasEvents: boolean;
+  }>();
+
+  for (const [user, events] of Object.entries(data)) {
+    if (user.startsWith('user_') || !Array.isArray(events) || !containsFarmData(events)) continue;
+    const profile = events.find((event) => event.profile)?.profile;
+    usersById.set(user, {
+      name: user,
+      displayName: profile?.displayName || user,
+      avatarUrl: profile?.avatarUrl || null,
+      hasEvents: true,
+    });
+  }
+
+  for (const profile of listWebhookProfiles()) {
+    const existing = usersById.get(profile.publicId);
+    usersById.set(profile.publicId, {
+      name: profile.publicId,
+      displayName: profile.displayName,
+      avatarUrl: existing?.avatarUrl || null,
+      hasEvents: existing?.hasEvents || false,
+    });
+  }
+
+  const users = Array.from(usersById.values());
   return NextResponse.json(
     {
       success: true,
-      users: [],
-      latestUser: null,
+      users,
+      latestUser: users[0]?.name || null,
     },
     { headers: NO_STORE_HEADERS },
   );

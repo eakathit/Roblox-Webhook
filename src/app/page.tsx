@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { type FormEvent, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Image from 'next/image';
 import {
   Activity,
@@ -10,10 +10,13 @@ import {
   Eye,
   Gamepad2,
   Gift,
+  KeyRound,
   Link2,
   Search,
+  ShieldCheck,
   Trash2,
   UsersRound,
+  Zap,
   X,
 } from 'lucide-react';
 import { matchCatalogEntry } from '@/lib/acx-catalog';
@@ -39,6 +42,13 @@ type UserSummary = {
   name: string;
   displayName: string;
   avatarUrl?: string | null;
+  hasEvents?: boolean;
+};
+
+type DirectSetupResult = {
+  publicId: string;
+  endpointUrl: string;
+  dashboardUrl: string;
 };
 
 function cleanText(value?: string) {
@@ -76,6 +86,13 @@ export default function Home() {
   const [usersLoading, setUsersLoading] = useState(true);
   const [eventsLoading, setEventsLoading] = useState(true);
   const [copiedLink, setCopiedLink] = useState(false);
+  const [directName, setDirectName] = useState('');
+  const [directSetup, setDirectSetup] = useState<DirectSetupResult | null>(null);
+  const [directSetupError, setDirectSetupError] = useState('');
+  const [creatingDirectKey, setCreatingDirectKey] = useState(false);
+  const [copiedEndpoint, setCopiedEndpoint] = useState(false);
+  const [testingDirect, setTestingDirect] = useState(false);
+  const [directTested, setDirectTested] = useState(false);
   const [activityPage, setActivityPage] = useState(1);
   const pollTimerRef = useRef<number | null>(null);
   const searchInputRef = useRef<HTMLInputElement | null>(null);
@@ -238,6 +255,67 @@ export default function Home() {
     setEvents([]);
   };
 
+  const createDirectKey = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setCreatingDirectKey(true);
+    setDirectSetupError('');
+
+    try {
+      const response = await fetch('/api/keys', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ displayName: directName }),
+      });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data?.error || 'สร้าง Webhook Key ไม่สำเร็จ');
+      setDirectSetup(data as DirectSetupResult);
+      fetch('/api/users', { cache: 'no-store' })
+        .then((usersResponse) => usersResponse.json())
+        .then((usersData) => setAvailableUsers(usersData?.users ?? []))
+        .catch(() => undefined);
+    } catch (error) {
+      setDirectSetupError(error instanceof Error ? error.message : 'สร้าง Webhook Key ไม่สำเร็จ');
+    } finally {
+      setCreatingDirectKey(false);
+    }
+  };
+
+  const copyEndpoint = async () => {
+    if (!directSetup) return;
+    await navigator.clipboard.writeText(directSetup.endpointUrl);
+    setCopiedEndpoint(true);
+    window.setTimeout(() => setCopiedEndpoint(false), 2000);
+  };
+
+  const sendDirectTest = async () => {
+    if (!directSetup) return;
+    setTestingDirect(true);
+    setDirectSetupError('');
+
+    try {
+      const response = await fetch(directSetup.endpointUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          eventType: 'Direct Webhook Test',
+          mapName: 'ACX Direct Connection',
+          result: 'Victory',
+          totalRuns: 1,
+          gems: 100,
+          gold: 2500,
+          drops: [{ name: 'Sorcerer King Token', quantity: 1, rarity: 'secret' }],
+        }),
+      });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data?.error || 'ส่งข้อมูลทดสอบไม่สำเร็จ');
+      setDirectTested(true);
+    } catch (error) {
+      setDirectSetupError(error instanceof Error ? error.message : 'ส่งข้อมูลทดสอบไม่สำเร็จ');
+    } finally {
+      setTestingDirect(false);
+    }
+  };
+
   return (
     <div className="app-shell">
       <header className="topbar">
@@ -276,7 +354,7 @@ export default function Home() {
               <div className="hero-copy">
                 <span className="hero-eyebrow"><i /> LIVE FARM INTELLIGENCE</span>
                 <h1>ทุกดรอป ทุกรีวอร์ด<br /><em>รวมไว้ในที่เดียว</em></h1>
-                <p>ติดตามผลการฟาร์มจาก Anime Crusaders X แบบเรียลไทม์ ผ่าน Discord Webhook</p>
+                <p>ติดตามผลการฟาร์มจาก Anime Crusaders X แบบเรียลไทม์ ผ่าน Direct Webhook หรือ Discord</p>
                 <a
                   className="discord-cta"
                   href="https://discord.gg/Q3SmcgQCCt"
@@ -295,6 +373,63 @@ export default function Home() {
               </div>
             </section>
 
+            <section className="direct-connect" aria-labelledby="direct-connect-title">
+              <div className="direct-connect-copy">
+                <span className="section-kicker"><Zap size={15} /> DIRECT WEBHOOK</span>
+                <h2 id="direct-connect-title">เชื่อมเกมตรงเข้าเว็บไซต์</h2>
+                <p>สร้าง URL ส่วนตัวแล้วนำไปใส่ในสคริปต์ฟาร์ม ข้อมูล JSON จะเข้าหน้า Dashboard โดยไม่ต้องผ่าน Discord</p>
+                <div className="direct-trust"><ShieldCheck size={16} /> Key ถูกสุ่มและจัดเก็บเฉพาะ hash</div>
+              </div>
+
+              {!directSetup ? (
+                <form className="direct-form" onSubmit={createDirectKey}>
+                  <label htmlFor="direct-name">ชื่อที่ต้องการแสดง</label>
+                  <div className="direct-input-row">
+                    <span><KeyRound size={18} /></span>
+                    <input
+                      id="direct-name"
+                      value={directName}
+                      onChange={(event) => setDirectName(event.target.value)}
+                      placeholder="เช่น donutziix"
+                      minLength={2}
+                      maxLength={40}
+                      required
+                    />
+                    <button type="submit" disabled={creatingDirectKey}>
+                      {creatingDirectKey ? 'กำลังสร้าง...' : 'สร้าง Webhook Key'}
+                    </button>
+                  </div>
+                  {directSetupError && <p className="direct-error">{directSetupError}</p>}
+                </form>
+              ) : (
+                <div className="direct-result">
+                  <div className="direct-result-heading">
+                    <span><Check size={16} /> พร้อมใช้งาน</span>
+                    <small>เก็บ URL นี้เป็นความลับ</small>
+                  </div>
+                  <div className="endpoint-box">
+                    <code>{directSetup.endpointUrl}</code>
+                    <button onClick={copyEndpoint} type="button">
+                      {copiedEndpoint ? <Check size={16} /> : <Copy size={16} />}
+                      {copiedEndpoint ? 'คัดลอกแล้ว' : 'คัดลอก URL'}
+                    </button>
+                  </div>
+                  {!directSetup.endpointUrl.startsWith('https://') && (
+                    <p className="direct-game-note">ในเกมต้องใช้ URL จากเว็บที่ Deploy แล้วและขึ้นต้นด้วย https://</p>
+                  )}
+                  <div className="direct-result-actions">
+                    <button className="direct-test-button" onClick={sendDirectTest} type="button" disabled={testingDirect || directTested}>
+                      {directTested ? <Check size={16} /> : <Zap size={16} />}
+                      {testingDirect ? 'กำลังส่ง...' : directTested ? 'ส่งข้อมูลทดสอบแล้ว' : 'ส่ง JSON ทดสอบ'}
+                    </button>
+                    <a className="dashboard-link" href={directSetup.dashboardUrl}>เปิด Dashboard ของฉัน</a>
+                  </div>
+                  {directTested && <p className="direct-success">สำเร็จ — เปิด Dashboard เพื่อดูรายการทดสอบได้เลย</p>}
+                  {directSetupError && <p className="direct-error">{directSetupError}</p>}
+                </div>
+              )}
+            </section>
+
             <section className="usage-guide" aria-labelledby="usage-guide-title">
               <div className="guide-heading">
                 <div>
@@ -306,15 +441,15 @@ export default function Home() {
               <div className="guide-grid">
                 <article className="guide-card">
                   <span className="guide-icon"><Link2 size={22} /></span>
-                  <span className="guide-step">DISCORD SETUP</span>
-                  <h3>สร้าง Webhook ใน Discord</h3>
-                  <p>กดปุ่มสร้าง Webhook จากบอท แล้วคัดลอกลิงก์ประจำห้องฟาร์มของคุณ</p>
+                  <span className="guide-step">DIRECT SETUP</span>
+                  <h3>สร้าง Key บนเว็บไซต์</h3>
+                  <p>ใส่ชื่อที่ต้องการแสดง แล้วกดสร้างเพื่อรับ Direct Webhook URL ส่วนตัว</p>
                 </article>
                 <article className="guide-card">
                   <span className="guide-icon"><Gamepad2 size={22} /></span>
                   <span className="guide-step">GAME SETUP</span>
-                  <h3>นำลิงก์ไปใส่ในเกม</h3>
-                  <p>วางลิงก์ในช่อง Webhook ของเกม เปิดใช้งาน แล้วเริ่มปล่อยฟาร์มได้เลย</p>
+                  <h3>นำ URL ไปใส่ในสคริปต์</h3>
+                  <p>ให้สคริปต์ส่ง JSON แบบ POST มายัง URL ที่ได้รับ แล้วเริ่มปล่อยฟาร์มได้เลย</p>
                 </article>
                 <article className="guide-card">
                   <span className="guide-icon"><Gift size={22} /></span>
@@ -369,7 +504,7 @@ export default function Home() {
                     </span>
                     <span className="user-info">
                       <b>{cleanText(user.displayName)}</b>
-                      <small><i /> {user.displayName !== user.name ? `@${cleanText(user.name)} · ` : ''}มีข้อมูล Webhook</small>
+                      <small><i /> {user.hasEvents === false ? 'พร้อมรับข้อมูล' : 'มีข้อมูล Webhook'}</small>
                     </span>
                     <span className="open-user"><Eye size={17} /></span>
                   </button>
@@ -400,7 +535,7 @@ export default function Home() {
                 <div>
                   <span className="section-kicker">FARM LOG</span>
                   <h1>{cleanText(selectedDisplayName)}</h1>
-                  <p>ประวัติจาก Discord Webhook · อัปเดตอัตโนมัติ</p>
+                  <p>ประวัติจาก {selectedUser.startsWith('direct_') ? 'Direct Webhook' : 'Discord Webhook'} · อัปเดตอัตโนมัติ</p>
                 </div>
               </div>
               <div className="logs-actions">
@@ -547,7 +682,7 @@ export default function Home() {
 
       <footer>
         <span>ACX Farm Tracker</span>
-        <span>Discord → Web Dashboard</span>
+        <span>Direct + Discord → Web Dashboard</span>
       </footer>
     </div>
   );

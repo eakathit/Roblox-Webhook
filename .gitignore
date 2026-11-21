@@ -35,6 +35,7 @@ yarn-error.log*
 
 # local webhook data and machine-specific development helpers
 /data/events.json
+/data/webhook-keys.json
 /src/app/api/tunnel/
 
 # vercel

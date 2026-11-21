@@ -1,0 +1,36 @@
+import { NextRequest, NextResponse } from 'next/server';
+import { createWebhookKey } from '@/lib/webhook-keys';
+
+const NO_STORE_HEADERS = { 'Cache-Control': 'no-store, max-age=0' };
+
+export async function POST(request: NextRequest) {
+  const contentLength = Number(request.headers.get('content-length') || '0');
+  if (contentLength > 4096) {
+    return NextResponse.json({ success: false, error: 'Request is too large' }, { status: 413 });
+  }
+
+  const body = await request.json().catch(() => null) as { displayName?: unknown } | null;
+  const displayName = typeof body?.displayName === 'string'
+    ? body.displayName.replace(/[\u0000-\u001f\u007f]/g, '').trim().slice(0, 40)
+    : '';
+
+  if (displayName.length < 2) {
+    return NextResponse.json(
+      { success: false, error: 'กรุณาใส่ชื่ออย่างน้อย 2 ตัวอักษร' },
+      { status: 400, headers: NO_STORE_HEADERS },
+    );
+  }
+
+  const { record, writeKey } = createWebhookKey(displayName);
+  const origin = request.nextUrl.origin;
+
+  return NextResponse.json(
+    {
+      success: true,
+      publicId: record.publicId,
+      endpointUrl: `${origin}/api/webhooks/direct/${writeKey}`,
+      dashboardUrl: `${origin}/?user=${encodeURIComponent(record.publicId)}`,
+    },
+    { status: 201, headers: NO_STORE_HEADERS },
+  );
+}

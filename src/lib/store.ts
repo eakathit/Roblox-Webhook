@@ -33,6 +33,23 @@ interface DiscordWebhookPayload {
     avatarUrl?: unknown;
     discordUserId?: unknown;
   };
+  eventType?: unknown;
+  title?: unknown;
+  mapName?: unknown;
+  map?: unknown;
+  result?: unknown;
+  wave?: unknown;
+  duration?: unknown;
+  timeElapsed?: unknown;
+  totalRuns?: unknown;
+  runs?: unknown;
+  resultsSummary?: unknown;
+  nextReset?: unknown;
+  gems?: unknown;
+  gold?: unknown;
+  drops?: unknown;
+  rewards?: unknown;
+  loot?: unknown;
   [key: string]: unknown;
 }
 
@@ -296,6 +313,64 @@ export function parseDiscordPayload(token: string, payload: unknown): ParsedWebh
             });
           }
         }
+      }
+    }
+  }
+
+  if (embeds.length === 0) {
+    const text = (value: unknown, maxLength = 240) => {
+      if (typeof value === 'string' || typeof value === 'number') {
+        return String(value).trim().slice(0, maxLength);
+      }
+      return '';
+    };
+
+    eventType = text(webhookPayload.eventType ?? webhookPayload.title, 120) || eventType;
+    mapName = text(webhookPayload.mapName ?? webhookPayload.map);
+    result = text(webhookPayload.result, 60);
+    wave = text(webhookPayload.wave, 40);
+    duration = text(webhookPayload.duration, 60);
+    timeElapsed = text(webhookPayload.timeElapsed, 60);
+    totalRuns = text(webhookPayload.totalRuns ?? webhookPayload.runs, 40);
+    resultsSummary = text(webhookPayload.resultsSummary, 160);
+    nextReset = text(webhookPayload.nextReset, 60);
+    gems = text(webhookPayload.gems, 40);
+    gold = text(webhookPayload.gold, 40);
+
+    const directDrops = webhookPayload.drops ?? webhookPayload.rewards ?? webhookPayload.loot;
+    if (Array.isArray(directDrops)) {
+      const allowedRarities = new Set<DropItem['rarity']>([
+        'secret', 'mythic', 'legendary', 'epic', 'rare', 'shiny', 'normal',
+      ]);
+
+      for (const rawDrop of directDrops.slice(0, 50)) {
+        if (!rawDrop || typeof rawDrop !== 'object' || Array.isArray(rawDrop)) continue;
+        const drop = rawDrop as Record<string, unknown>;
+        const itemName = text(drop.name ?? drop.item, 120);
+        if (!itemName) continue;
+
+        const rawQuantity = typeof drop.quantity === 'number'
+          ? drop.quantity
+          : Number.parseInt(text(drop.quantity ?? drop.amount, 16).replace(/[^0-9]/g, ''), 10);
+        const quantity = Number.isFinite(rawQuantity) && rawQuantity > 0
+          ? Math.min(Math.floor(rawQuantity), 999999999)
+          : 1;
+        const rarityText = text(drop.rarity, 30).toLowerCase() as DropItem['rarity'];
+        const rarity = allowedRarities.has(rarityText) ? rarityText : 'normal';
+        const catalogMatch = matchCatalogEntry(itemName);
+        const canonicalName = catalogMatch?.entry.name || itemName;
+
+        drops.push({
+          name: canonicalName,
+          originalName: canonicalName !== itemName ? itemName : undefined,
+          quantity,
+          rarity,
+          catalogId: catalogMatch?.entry.id,
+          catalogType: catalogMatch?.entry.type,
+          catalogRarity: catalogMatch?.entry.rarity || undefined,
+          icon: catalogMatch?.entry.icon || undefined,
+          matchConfidence: catalogMatch?.confidence,
+        });
       }
     }
   }
